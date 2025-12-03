@@ -6,8 +6,22 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
        Arrayss arr= new Arrayss();
-       int []numbers={1,2,3,4,5};
+       int []numbers={9,2,3,8,5,6,7,1};
+       Arrays.sort(numbers);
+       arr.Traversal(numbers);
         arr.LinearSearch(numbers,5);
+        int result= arr.LinearSearch(numbers,10);
+        int result2= arr.binarySearch(numbers,9,0,numbers.length-1);
+
+//        if(result!=-1)
+//        System.out.println("value found at index :"+result);
+//        else
+//            System.out.println("value not found");
+        if(result2!=-1)
+            System.out.println("value found at index :"+result2);
+        else
+            System.out.println("value not found");
+
 
 
 
