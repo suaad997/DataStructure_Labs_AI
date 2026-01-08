@@ -65,6 +65,17 @@ public void display(){
 
 }
 
+    public void display2(){
+
+        Node<E>temp=header.getNext();
+       // System.out.print("null<----Header<---->");
+        while (temp!=tailer){
+            System.out.println(temp.getData());
+            temp=temp.getNext();
+        }  //  System.out.println("tailer---->null");
+
+    }
+
 
 
 

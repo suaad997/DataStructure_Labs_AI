@@ -89,6 +89,14 @@ public class SinglyLinkedList<E> {
         System.out.println("null \n");
 
     }
+    public void display2() {
+        Node<E> temp = head;
+        while (temp != null) {
+            System.out.println(temp.getData() );
+            temp = temp.getNext();
+        }
+
+    }
 
     public void addAtposition(E data,int position) {
         if (position <= 0 || position > size + 1) {
