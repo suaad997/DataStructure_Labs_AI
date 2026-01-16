@@ -55,8 +55,8 @@ public class ArrayQueue<E> implements Queue<E>{
        for(int i=0; i< size; i++){
            int index=(f+i)% arr.length;
            System.out.print(arr[index]+" ");
-
         }
+
 
 
     }
