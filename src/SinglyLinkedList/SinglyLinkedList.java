@@ -92,9 +92,10 @@ public class SinglyLinkedList<E> {
     public void display2() {
         Node<E> temp = head;
         while (temp != null) {
-            System.out.println(temp.getData() );
+            System.out.print(temp.getData()+" ");
             temp = temp.getNext();
         }
+        System.out.println();
 
     }
 

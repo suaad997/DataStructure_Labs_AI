@@ -9,7 +9,12 @@ public class Main {
         btree.insertNode(14);
         btree.insertNode(2);
         //System.out.println(  btree.serachNode(8));
+        System.out.println("Preorder traversal:");
         btree.preorder();
+        System.out.println("Inorder traversal:");
+        btree.inorder();
+        System.out.println("Postorder traversal:");
+        btree.postorder();
 
 
 

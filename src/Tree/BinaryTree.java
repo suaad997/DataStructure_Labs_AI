@@ -63,12 +63,41 @@ public void preorder(){
         preOrderT(root);
     System.out.println();
 }
+/// //////////////////
+///
+    private void inOrderT(Node node){
+        if(node==null) {
+            return;
+        }
+        inOrderT(node.getLeft());
+        System.out.print(node.getValue()+" ");
+        inOrderT(node.getRight());
+    }
+    public void inorder(){
+        inOrderT(root);
+        System.out.println();
+    }
+//////////////////////
+    private void postOrderT(Node node){
+        if(node==null) {
+            return;
+        }
+        postOrderT(node.getLeft());
+        postOrderT(node.getRight());
+        System.out.print(node.getValue()+" ");
+
+    }
+    public void postorder(){
+        postOrderT(root);
+        System.out.println();
+    }
 
 
 
 
 
-    class Node{
+
+ class Node{
      private int value;
      private Node left;
      private Node right;
